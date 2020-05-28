@@ -2,7 +2,6 @@
 - hosts: all
   gather_facts: false
   tasks:
-- name: Create folder called Avi
   win_dsc:
     resource_name: File
     Ensure: Present
