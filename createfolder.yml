@@ -1,9 +1,9 @@
 ---
-
 - hosts: all
-  gather_facts: false
   tasks:
-    - win_dsc:
-    resource_name: File
-    Ensure: Present
-    DestinationPath: C:\Avi
+
+  - name: Create Directory Called Avi
+    win_dsc:
+      resource_name:  File
+      Ensure: Present
+      DestinationPath: "C:\Avi"
