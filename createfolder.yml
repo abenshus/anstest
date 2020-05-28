@@ -1,6 +1,9 @@
 ---
+
+- hosts: all
+  gather_facts: false
   tasks:
-  win_dsc:
+    - win_dsc:
     resource_name: File
     Ensure: Present
     DestinationPath: C:\Avi
