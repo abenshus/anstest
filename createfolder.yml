@@ -7,3 +7,4 @@
       resource_name:  File
       Ensure: Present
       DestinationPath: C:\Avi
+      Type: Directory
