@@ -6,4 +6,4 @@
     win_dsc:
       resource_name:  File
       Ensure: Present
-      DestinationPath: "C:\Avi"
+      DestinationPath: C:\Avi
