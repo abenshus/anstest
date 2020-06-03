@@ -1,0 +1,14 @@
+---
+- name: install xWebAdministration module
+  win_psmodule:
+    name: xWebAdministration
+    state: present
+ 
+- name: install IIS features that are required
+  win_dsc:
+    resource_name: WindowsFeature
+    Name: '{{item}}'
+    Ensure: Present
+  with_items:
+  - Web-Server
+  - Web-Asp-Net45
